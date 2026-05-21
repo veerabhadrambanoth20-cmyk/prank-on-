@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Legendary Cartoon Swipe 😂</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+    font-family:Arial, sans-serif;
+    overflow:hidden;
+}
+
+.container{
+    position:relative;
+    width:350px;
+    height:580px;
+}
+
+.card{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,0.35);
+    transition:0.5s ease;
+}
+
+.card img{
+    width:100%;
+    height:78%;
+    object-fit:contain;
+    background:#fff;
+    padding:10px;
+}
+
+.card-info{
+    padding:18px;
+    height:22%;
+    background:white;
+}
+
+.card-info h2{
+    font-size:28px;
+    margin-bottom:8px;
+    color:#222;
+}
+
+.card-info p{
+    font-size:18px;
+    color:#666;
+    font-weight:bold;
+}
+
+/* BUTTONS */
+
+.buttons{
+    position:absolute;
+    bottom:-90px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.btn{
+    width:70px;
+    height:70px;
+    border:none;
+    border-radius:50%;
+    background:white;
+    font-size:30px;
+    cursor:pointer;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+    transition:0.2s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+.btn:active{
+    transform:scale(0.9);
+}
+
+/* SWIPE */
+
+.swipe-left{
+    transform:translateX(-160%) rotate(-25deg);
+    opacity:0;
+}
+
+.swipe-right{
+    transform:translateX(160%) rotate(25deg);
+    opacity:0;
+}
+
+/* FINAL SCREEN */
+
+#reveal{
+    display:none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    animation:pop 0.5s ease;
+}
+
+#reveal img{
+    width:90%;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+#reveal h2{
+    font-size:34px;
+    color:#ff0066;
+}
+
+#reveal p{
+    margin-top:10px;
+    font-size:20px;
+    color:#555;
+}
+
+.credit{
+    position:absolute;
+    bottom:-130px;
+    width:100%;
+    text-align:center;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    letter-spacing:1px;
+    opacity:0.9;
+}
+
+@keyframes pop{
+    0%{
+        transform:scale(0.5);
+        opacity:0;
+    }
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- KRISH -->
+    <div class="card" id="card5">
+
+        <img src="https://e7.pngegg.com/pngimages/235/214/png-clipart-cartoon-character-roll-no-21-vertebrate-fictional-character.png">
+
+        <div class="card-info">
+            <h2>Krish 🔥</h2>
+            <p>"I'm Krish from Mathura 😭🔥"</p>
+        </div>
+
+    </div>
+
+    <!-- HEIDI -->
+    <div class="card" id="card4">
+
+        <img src="https://toppng.com/uploads/preview/heidi-and-mountain-dog-11548628711iencmjh8nb.png">
+
+        <div class="card-info">
+            <h2>Heidi 🌸</h2>
+            <p>"I'm Heidi from the Swiss Alps 🏔️"</p>
+        </div>
+
+    </div>
+
+    <!-- ASH -->
+    <div class="card" id="card3">
+
+        <img src="https://toppng.com/uploads/preview/free-download-ash-y-pikachu-png-clipart-ash-ketchum-ash-and-pikachu-11563170397mrelu8i2j8.png">
+
+        <div class="card-info">
+            <h2>Ash & Pikachu ⚡</h2>
+            <p>"I'm Ash from Pallet Town ⚡"</p>
+        </div>
+
+    </div>
+
+    <!-- DORAEMON -->
+    <div class="card" id="card2">
+
+        <img src="https://toppng.com/uploads/preview/doraemon-png-photos-nobita-and-doraemon-hd-11562969641lbro8rk8lr.png">
+
+        <div class="card-info">
+            <h2>Doraemon 🔵</h2>
+            <p>"I'm Doraemon from the 22nd century future 🤖"</p>
+        </div>
+
+    </div>
+
+    <!-- SHINCHAN -->
+    <div class="card" id="card1">
+
+        <img src="https://banner2.cleanpng.com/lnd/20241120/we/510a1a92807bb47ed4800f0d3dc549.webp">
+
+        <div class="card-info">
+            <h2>Shinchan 😎</h2>
+            <p>"I'm Shinchan, 5 years old from Kasukabe 😂"</p>
+        </div>
+
+    </div>
+
+    <!-- FINAL REVEAL -->
+
+    <div id="reveal">
+
+        <img src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=1200&auto=format&fit=crop">
+
+        <h2>BRO THIS IS YOU 😂🐷</h2>
+
+        <p>"I'm Piggy from the mud kingdom 😭🔥"</p>
+
+    </div>
+
+    <!-- BUTTONS -->
+
+    <div class="buttons" id="buttons">
+
+        <button class="btn" onclick="swipe('left')">⬅️</button>
+
+        <button class="btn" onclick="swipe('right')">➡️</button>
+
+    </div>
+
+    <!-- CREDIT -->
+
+    <div class="credit">
+        made by V.B ⚡
+    </div>
+
+</div>
+
+<script>
+
+let currentCard = 1;
+const totalCards = 5;
+
+function swipe(direction){
+
+    const card =
+    document.getElementById(`card${currentCard}`);
+
+    if(card){
+
+        if(direction === 'left'){
+            card.classList.add('swipe-left');
+        }
+        else{
+            card.classList.add('swipe-right');
+        }
+
+        currentCard++;
+    }
+
+    if(currentCard > totalCards){
+
+        setTimeout(()=>{
+
+            document.getElementById('buttons')
+            .style.display = 'none';
+
+            document.getElementById('reveal')
+            .style.display = 'flex';
+
+        },500);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
